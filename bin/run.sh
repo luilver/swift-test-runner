@@ -31,6 +31,6 @@ mkdir -p "${output_dir}"
 echo "${slug}: testing..."
 
 # Run the tests for the provided implementation file
-RUNALL=true ./bin/TestRunner --slug "${slug}" --solution-directory "${input_dir}" --output-directory "${output_dir}" --swift-location $(which swift) --build-directory "/tmp/"
+RUNALL=true ./bin/TestRunner --slug "${slug}" --solution-directory "${input_dir}" --output-directory "${output_dir}" --swift-location $(which swift) --build-directory "/tmp"
 
 echo "${slug}: done"
