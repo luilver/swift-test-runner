@@ -1,9 +1,9 @@
 {
-  "status" : "pass",
-  "tests" : [
+  "status": "pass",
+  "tests": [
     {
-      "name" : "SingleThatPassesTests.testAdd",
-      "status" : "pass"
+      "name": "SingleTestThatPassesTests.testAdd",
+      "status": "pass"
     }
   ]
 }

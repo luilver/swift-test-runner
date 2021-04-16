@@ -1,6 +1,6 @@
-import SingleThatFailsTests
+import SingleTestThatFailsTests
 import XCTest
 
 var tests = [XCTestCaseEntry]()
-tests += SingleThatFailsTests.allTests()
+tests += SingleTestThatFailsTests.allTests()
 XCTMain(tests)

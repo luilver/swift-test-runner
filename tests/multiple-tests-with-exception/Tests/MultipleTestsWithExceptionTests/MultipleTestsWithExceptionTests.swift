@@ -1,8 +1,8 @@
 import XCTest
 
-@testable import MultipleMultipleFails
+@testable import MultipleTestsWithException
 
-final class MultipleMultipleFailsTests: XCTestCase {
+final class MultipleTestsWithExceptionTests: XCTestCase {
   func testAdd() {
     XCTAssertEqual(sum(2, 3), 5, "2+3 should equal 5")
   }
@@ -12,12 +12,17 @@ final class MultipleMultipleFailsTests: XCTestCase {
   }
 
   func testMul() {
-    XCTAssertEqual(mul(2, 3), 6)
+    XCTAssertEqual(mul(3, 2), 6)
+  }
+
+  func testThrow() {
+    XCTAssertEqual(try throwErr(2, 0), 6)
   }
 
   static var allTests = [
     ("testAdd", testAdd),
     ("testSub", testSub),
     ("testMul", testMul),
+    ("testThrow", testThrow),
   ]
 }

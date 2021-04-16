@@ -4,12 +4,12 @@
 import PackageDescription
 
 let package = Package(
-  name: "MultipleWithException",
+  name: "MultipleTestsWithException",
   products: [
     // Products define the executables and libraries produced by a package, and make them visible to other packages.
     .library(
-      name: "MultipleWithException",
-      targets: ["MultipleWithException"])
+      name: "MultipleTestsWithException",
+      targets: ["MultipleTestsWithException"])
   ],
   dependencies: [
     // Dependencies declare other packages that this package depends on.
@@ -19,10 +19,10 @@ let package = Package(
     // Targets are the basic building blocks of a package. A target can define a module or a test suite.
     // Targets can depend on other targets in this package, and on products in packages which this package depends on.
     .target(
-      name: "MultipleWithException",
+      name: "MultipleTestsWithException",
       dependencies: []),
     .testTarget(
-      name: "MultipleWithExceptionTests",
-      dependencies: ["MultipleWithException"]),
+      name: "MultipleTestsWithExceptionTests",
+      dependencies: ["MultipleTestsWithException"]),
   ]
 )

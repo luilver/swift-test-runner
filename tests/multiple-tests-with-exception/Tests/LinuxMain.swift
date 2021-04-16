@@ -1,6 +1,6 @@
-import MultipleWithExceptionTests
+import MultipleTestsWithExceptionTests
 import XCTest
 
 var tests = [XCTestCaseEntry]()
-tests += MultipleWithExceptionTests.allTests()
+tests += MultipleTestsWithExceptionTests.allTests()
 XCTMain(tests)

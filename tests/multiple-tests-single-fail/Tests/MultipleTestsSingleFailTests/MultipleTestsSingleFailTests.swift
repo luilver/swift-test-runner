@@ -1,8 +1,8 @@
 import XCTest
 
-@testable import MultipleSingleFail
+@testable import MultipleTestsSingleFail
 
-final class MultipleSingleFailTests: XCTestCase {
+final class MultipleTestsSingleFailTests: XCTestCase {
   let runAll = Bool(ProcessInfo.processInfo.environment["RUNALL", default: "false"]) ?? false
 
   func testAdd() {

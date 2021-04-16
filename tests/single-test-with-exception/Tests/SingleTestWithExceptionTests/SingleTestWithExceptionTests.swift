@@ -1,8 +1,8 @@
 import XCTest
 
-@testable import SingleWithException
+@testable import SingleTestWithException
 
-final class SingleWithExceptionTests: XCTestCase {
+final class SingleTestWithExceptionTests: XCTestCase {
   func testAdd() {
     XCTAssertEqual(try sum(2, 3), 5, "2+3 should equal 5")
   }

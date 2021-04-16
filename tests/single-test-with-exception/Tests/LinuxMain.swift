@@ -1,6 +1,6 @@
-import SingleWithExceptionTests
+import SingleTestWithExceptionTests
 import XCTest
 
 var tests = [XCTestCaseEntry]()
-tests += SingleWithExceptionTests.allTests()
+tests += SingleTestWithExceptionTests.allTests()
 XCTMain(tests)
